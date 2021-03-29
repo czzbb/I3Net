@@ -300,7 +300,6 @@ def train():
                 start_time = time.time()
 
         old_state = new_state
-        print(old_state.cpu().numpy())
         print('This epoch cost %.4f sec'%(time.time()-epoch_time))
 
         if (epoch % 10 == 0) or (epoch in [54, 58, 62, 66, 70]):
