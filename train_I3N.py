@@ -26,10 +26,10 @@ train_set = parser.add_mutually_exclusive_group()
 #
 parser.add_argument('--name', default='voc2clipart',type=str)
 parser.add_argument('--dataset', default='VOC',
-                    choices=['VOC', 'cs'],
+                    choices=['VOC'],
                     type=str)
 parser.add_argument('--dataset_target', default='clipart',
-                    choices=['VOC', 'cs', 'clipart', 'water', 'comic'],
+                    choices=['clipart', 'water', 'comic'],
                     type=str)
 parser.add_argument('--dcbr_weight', default=0.05, type=float)
 parser.add_argument('--gcr_weight', default=1, type=float)
