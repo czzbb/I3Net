@@ -8,7 +8,7 @@ Please follow [ssd.pytorch](https://github.com/amdegroot/ssd.pytorch) respositor
 * **PASCAL_VOC 07+12**: Please follow the [instruction](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models) to prepare VOC dataset.
 * **Clipart/WaterColor/Comic**: Please follow the [instruction](https://github.com/naoto0804/cross-domain-detection/tree/master/datasets) to prepare dataset.
 
-## Train
+## Pre-trained Models
 * First download the fc-reduced VGG-16 PyTorch base network weights at: https://s3.amazonaws.com/amdegroot-models/vgg16_reducedfc.pth
 * By default, we assume you have downloaded the file in the `ssd.pytorch/weights` dir:
 ```
@@ -16,7 +16,7 @@ mkdir weights
 cd weights
 wget https://s3.amazonaws.com/amdegroot-models/vgg16_reducedfc.pth
 ```
-* Train
+## Train
 ```
 CUDA_VISIBLE_DEVICES=$GPU_ID \
        python train_I3N.py \
@@ -25,3 +25,9 @@ CUDA_VISIBLE_DEVICES=$GPU_ID \
        --basenet path_to_model
 ```
 ## Test
+```
+CUDA_VISIBLE_DEVICES=$GPU_ID \
+       python eval_I3N.py \
+       --dataset target_dataset\
+       --trained_model_path path_to_model
+```
