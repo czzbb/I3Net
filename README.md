@@ -34,8 +34,8 @@ CUDA_VISIBLE_DEVICES=$GPU_ID \
 ## Citation
 If you find this repository useful, please cite our paper:
 ```
-@inproceedings{chen2021I3NET,
-  title={I^3Net: Implicit Instance-Invariant Network for Adapting One-Stage Object Detectors},
+@inproceedings{CHEN_2021_I3NET,
+  title={I3Net: Implicit Instance-Invariant Network for Adapting One-Stage Object Detectors},
   author={Chen, Chaoqi and Zheng, Zebiao and Huang, Yue and Ding, Xinghao and Yu, Yizhou},
   booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2021}
